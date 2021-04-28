@@ -1,10 +1,10 @@
-fun main() {
-    val NNUMEROS = 99
-    val MINALEATORIO = 0
-    val MAXALEATORIO = 100
+const val NNUMEROS = 99
+const val MINALEATORIO = 0
+const val MAXALEATORIO = 100
 
+fun main() {
     var suma = 0
-    var media = 0
+
     val lista = mutableListOf<Int>()
 
     for(i in 0..NNUMEROS){
@@ -12,7 +12,7 @@ fun main() {
         suma += lista[i]
     }
 
-    media = suma/(NNUMEROS+1)
+    val media = suma/(NNUMEROS+1)
     println("Media: $media")
 
     lista.forEach {
